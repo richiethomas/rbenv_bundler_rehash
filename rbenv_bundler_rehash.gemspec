@@ -4,19 +4,19 @@ Gem::Specification.new do |spec|
   spec.name          = "rbenv_bundler_rehash"
   spec.version       = RbenvBundlerRehash::VERSION
   spec.authors       = ["Richie Thomas"]
-  spec.email         = ["rthomas@mavenlink.com"]
+  spec.email         = ["rickthomas1980@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because RubyGems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.summary       = %q{Installs a Bundler plugin to rehash your RBENV shims whenever a gem is installed or uninstalled.}
+  spec.description   = %q{As part of managing Ruby versions, RBENV uses shim files to intercept calls to Ruby executables.  These shim files must be regenerated whenever a gem is installed or uninstalled.  This plugin adds `POST_INSTALL` and `POST_UNINSTALL` Bundler hooks to enable that process automatically.}
+  spec.homepage      = "https://github.com/richiethomas/rbenv_bundler_rehash"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
-  spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
+  spec.metadata["allowed_push_host"] = "https://github.com/richiethomas/rbenv_bundler_rehash"
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "TODO: Put your gem's public repo URL here."
-  spec.metadata["changelog_uri"] = "TODO: Put your gem's CHANGELOG.md URL here."
+  spec.metadata["source_code_uri"] = "https://github.com/richiethomas/rbenv_bundler_rehash"
+  spec.metadata["changelog_uri"] = "https://github.com/richiethomas/rbenv_bundler_rehash"
 
   # Specify which files should be added to the gem when it is released.
   # The `git ls-files -z` loads the files in the RubyGem that have been added into git.
