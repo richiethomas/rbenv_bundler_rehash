@@ -1,6 +1,10 @@
 require "rbenv_bundler_rehash/version"
+require 'open3'
 
 module RbenvBundlerRehash
-  class Error < StandardError; end
-  # Your code goes here...
+  class CouldNotRehashError < StandardError; end
+  stdout, stderr, status = Open3.capture3("rbenv rehash")
+  if stderr
+    raise CouldNotRehashError, stderr
+  end
 end
