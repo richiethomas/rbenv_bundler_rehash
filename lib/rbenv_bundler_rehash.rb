@@ -4,7 +4,7 @@ require 'open3'
 module RbenvBundlerRehash
   class CouldNotRehashError < StandardError; end
 
-  def perform
+  def self.perform
     stdout, stderr, status = Open3.capture3("rbenv rehash")
     if stderr
       raise CouldNotRehashError, stderr
