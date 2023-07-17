@@ -6,8 +6,8 @@ module RbenvBundlerRehash
 
   def self.perform
     stdout, stderr, status = Open3.capture3("rbenv rehash")
-    unless stderr.empty?
-      raise CouldNotRehashError, stderr
-    end
+    # unless stderr.empty?
+    #   raise CouldNotRehashError, stderr
+    # end
   end
 end

@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    rbenv_bundler_rehash (0.1.9)
+    rbenv_bundler_rehash (0.2.0)
       pry-byebug
 
 GEM
