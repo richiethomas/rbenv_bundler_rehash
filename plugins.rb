@@ -1,7 +1,7 @@
 require 'rbenv_bundler_rehash'
 require 'byebug'
 
-debugger
+# debugger
 
 Bundler::Plugin.add_hook('after-install-all') do |dependencies|
   debugger
